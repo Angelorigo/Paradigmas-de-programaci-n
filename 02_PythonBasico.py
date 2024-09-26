@@ -60,4 +60,89 @@ z = 1+1j
 
 #  suma +
 #  resta
+#  multiplicación *
+#  división /
+#  módulo %
+#  exponente **
+#  // función piso
+#  Funciones para transformar números int() float() complex()
+#  Operaciones abs() round() pow()
+
+print(round(3.141592,4))
+
+#============================
+#  Strings de varias líneas
+#============================
+
+parrafo = """ En el bosque de la china
+la chinita se perdió """
+
+print(parrafo)
+
+#=================================================
+#  La función len() obtiene el tamaño del string
+#=================================================
+
+n=len(parrafo)
+
+print(n)
+
+#===============================================================
+#  Las letras de un string ocupan lugares como en un arreglo
+#  (también de atrás para adelante comenzando en -1 el último)
+#===============================================================
+
+palabra = "hola"
+
+print(palabra[0])
+print(palabra[-4])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
