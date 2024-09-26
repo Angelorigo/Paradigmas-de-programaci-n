@@ -1,0 +1,79 @@
+#=======================================
+# Curso de paradigmas de programación
+# Semestre 2025-1
+#=======================================
+
+#===============================
+# Uso de la terminal (UNIX)
+#===============================
+
+ls	  -> (list) listado de archivos en el directorio
+cd XXX    -> (change directory) cambio de directorio
+		XXX = null  -> te lleva a home
+		XXX = ..    -> te regresa al directorio anterior
+		XXX = ../.. -> te regresa dos directorios anteriores 
+mkdir X   -> (make directory) crear la carpeta X
+clear     -> limpia la terminal
+pwd       -> (present working directory) ruta en la que te encuentras
+cp X Y    -> (copy) copiar archivo X al Y 
+mv X Y    -> (move) copiar y borrar archivo X al Y 
+rm XXX    -> (remove) borrar un archivo
+		XXX = *  -> borra todo en el directorio
+		XXX = *.py -> borra todos los que terminan en .py
+		XXX = data* -> borra todo lo que empieza en data
+rm -r XXX -> borrar un directorio completo
+rmdir     -> borrar un directorio vacío
+ps -ef    -> lista de procesos en la máquina
+kill -9 XXX -> matar proceso 
+man XXX   -> manual de la instrucción XXX 
+
+#========================
+# Instalar aplicaciones
+#========================
+
+sudo apt-get update      -> actualiza la lista de programas a renovar
+sudo apt-get upgrade     -> baja los programas necesarios a actualizar
+sudo apt-get install XXX -> instalar aplicación XXX 
+
+#========================
+# Instrucciones de vi
+#========================
+
+R   	 -> (replace) escribir y reemplazar
+i   	 -> (insert) escribir desplazando
+o   	 -> (open) abrir renglón abajo
+O   	 -> abrir renglón arriba
+dd  	 -> borrar renglón 
+D   	 -> borrar lo que hay a partir de ese punto hacia adelante
+/XXX	 -> buscar XXX
+		si hay varios: n -> (next) siguiente
+			       N -> anterior
+x	 -> borrar un caracter
+:X	 -> te manda a la línea X 
+X:$	 -> te manda a la última línea
+Y(instrucción) -> repite la instrucción Y veces
+:w	 -> (write) graba/guarda el archivo
+:wq 	 -> (write and quit)  graba y sale del archivo
+:q!	 -> (quit!) se sale sin grabar
+
+#=======================
+# Instrucciones de Git
+#=======================
+
+git init
+git config --global user.name "Ángel Servín"
+git config --global user.email "youremail"
+git clone https://...
+git add
+git push
+
+
+
+
+
+
+
+
+
+
+
