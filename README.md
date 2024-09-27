@@ -1,4 +1,4 @@
-# Comparación de performance entre python3, C y javascript 
+# Códigos hechos en clase
 
 el artículo original se encuentra en la página de LinkedIn:
 
