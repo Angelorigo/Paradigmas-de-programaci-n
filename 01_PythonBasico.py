@@ -1,6 +1,6 @@
 #================================
 #  Álvarez Servín Ángel Rodrigo
-#================================
+#=================================
 #  Paradígmas de programación 
 #  Matemática Algorítmica
 #  ESFM-IPN    Sept-2025
