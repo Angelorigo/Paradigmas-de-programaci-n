@@ -1,4 +1,7 @@
 #=======================================
+#  Álvarez Servín Ángel Rodrigo
+#  ESFM IPN 
+#=======================================
 # Curso de paradigmas de programación
 # Semestre 2025-1
 #=======================================
