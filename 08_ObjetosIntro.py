@@ -17,7 +17,7 @@
 #==================================
 
 class ObjetoVacio:
-	pass
+   pass
 
 
 #====================================================
@@ -33,31 +33,27 @@ print(type(nada))
 #===================
 
 class Llanta:
-	#=======================================
-	#  Variable cuenta es de toda la clase
-	#=======================================
+  #=======================================
+  #  Variable cuenta es de toda la clase
+  #=======================================
 
-	cuenta = 0
+  cuenta = 0
 
-	#=====================================
-	#  Fución constructora de identidad
-	#  __init__ es una función reservada
-	#  Comienza con uno mismo: self
-	#  Pero puede ser otro nombre (mi)
-	#  Parámetros de entrada = default
-	#=====================================
+  #=====================================
+  #  Fución constructora de identidad
+  #  __init__ es una función reservada
+  #  Comienza con uno mismo: self
+  #  Pero puede ser otro nombre (mi)
+  #  Parámetros de entrada = default
+  #=====================================
 
-	def __init__(mi, radio = 50, ancho = 30, presión = 1.5):
-
-	  #  Variable de la estructura completa Llanta
-
-	  Llanta.cuenta +=1
-
-	  #  Variables exclusivas de cada objeto
-
-	  mi.radio = radio
-	  mi.ancho = ancho
-	  mi.presión = presión
+  def __init__(mi, radio = 50, ancho = 30, presión = 1.5):
+     #  Variable de la estructura completa Llanta
+     Llanta.cuenta += 1
+     #  Variables exclusivas de cada objeto
+     mi.radio = radio
+     mi.ancho = ancho
+     mi.presión = presión
 
 
 #==========================
@@ -67,7 +63,7 @@ class Llanta:
 llanta1 = Llanta(50, 30, 1.5)
 llanta2 = Llanta(presión = 1.2)
 llanta3 = Llanta()
-Llanta4 = Llanta(40, 30, 1.6)
+llanta4 = Llanta(40, 30, 1.6)
 
 
 #=====================================
@@ -75,13 +71,14 @@ Llanta4 = Llanta(40, 30, 1.6)
 #=====================================
 
 class Coche:
-    def __init__(mi, ll1, ll2, ll3, ll4):
-	mi.llanta1 = ll1
-	mi.llanta2 = ll2
-	mi.llanta3 = ll3
-	mi.llanta4 = ll4
+   def __init__(mi, ll1, ll2, ll3, ll4):
+      mi.llanta1 = ll1
+      mi.llanta2 = ll2
+      mi.llanta3 = ll3
+      mi.llanta4 = ll4
 
 micoche = Coche(llanta1, llanta2, llanta3, llanta4)
+
 print("Total de llantas: ", Llanta.cuenta)	#  Variable global de la clase
 print("Presión de la llanta 4 = ", llanta4.presión)	#  Presión de la llanta 4
 print("Radio de la llanta 4 = ", llanta4.radio)
@@ -100,15 +97,15 @@ print("Presión de la llanta 1 de mi coche = ", micoche.llanta1.presión)
 #=======================================================================
 
 class Estudiante:
-	def __init__(mi):
-	    mi.__nombre = " "
-	def ponerme.nombre(mi, nombre):
-	    print("Se llamó a ponerme_nombre")
-	    mi.__nombre = nombre
-	def obtener_nombre(mi):
-	    print("Se llamó a obtener_nombre")
-	    return mi.__nombre
-	nombre = property(obtener_nombre, ponerme_nombre)
+    def __init__(mi):
+        mi.__nombre = " "
+    def ponerme_nombre(mi, nombre):
+        print("Se llamó a ponerme_nombre")
+        mi.__nombre = nombre
+    def obtener_nombre(mi):
+        print("Se llamó a obtener_nombre")
+        return mi.__nombre
+    nombre = property(obtener_nombre, ponerme_nombre)
 
 
 #======================================
@@ -143,16 +140,16 @@ print(estudiante.nombre)
 #----------------------
 
 class Cuadrilatero:
-	def __init__(mi, a, b, c, d):
-	    mi.lado1 = a
-	    mi.lado2 = b
-	    mi.lado3 = c
-    	    mi lado4 = d
+    def __init__(mi, a, b, c, d):
+        mi.lado1 = a
+        mi.lado2 = b
+        mi.lado3 = c
+        mi.lado4 = d
 
-	def perimetro(mi):
-	    p = mi.lado1 + mi.lado2 + mi.lado3 + mi.lado4
-	    print("Perímetro = ", p)
-	    return p
+    def perimetro(mi):
+        p = mi.lado1 + mi.lado2 + mi.lado3 + mi.lado4
+        print("Perímetro = ", p)
+        return p
 
 
 #======================================
@@ -162,14 +159,11 @@ class Cuadrilatero:
 #======================================
 
 class Rectangulo(Cuadrilatero):
-	def __init__(self, a, b):
-
-
-	    #==========================
-	    #  Construcor de su madre
-	    #==========================
-	
-	    super().__init__(a, b, a, b)
+    def __init__(self, a, b):
+        #==========================
+        #  Construcor de su madre
+        #==========================
+        super().__init__(a, b, a, b)
 
 
 #======================
@@ -178,12 +172,12 @@ class Rectangulo(Cuadrilatero):
 #======================
 
 class Cuadrado(Rectangulo):
-	def __init__(self, a):
-	    super():__init__(a,a)
+    def __init__(self, a):
+        super().__init__(a,a)
 
-def area(self):
-    area = self.lado1**2
-    return area
+    def area(self):
+        area = self.lado1**2
+        return area
 
 #  def perimetroCuadrado(self):
 #    pc = 4.0*self.lado1
@@ -195,7 +189,7 @@ def area(self):
 #  Crear un cuadrado
 #=====================
 
-cuadrado1 = cuadrado(5)
+cuadrado1 = Cuadrado(5)
 
 
 #========================================================
