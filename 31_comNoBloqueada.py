@@ -16,7 +16,7 @@ import numpy as np
 class Mensaje:
     def __init__(self, rank):
         #  LISTA COMÚN
-        self.x = [i for i in range(range*10)]
+        self.x = [i for i in range(rank*10)]
         self.p = "Vengo del proceso "+str(rank)
         
         #  ARREGLO DE NUMPY (OPTIMIZADO)
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     
     s = Mensaje(rank)
     src = rank-1 if rank!=0 else size-1
-    sdt = rank+1 if rank!=size-1 else 0
+    dst = rank+1 if rank!=size-1 else 0
  
     
 #=======================
@@ -76,21 +76,7 @@ comm.Isend(m, dest=dst)
 #  float64 (doble precisión)
 #==================================== 
 
-aa = np.zeros(10, dtype=np, float64)
+aa = np.zeros(10, dtype=np.float64)
 req = comm.Irecv(aa, source=src)
 req.Wait()
 print("Soy el proceso ", rank, ", el resultado es ", aa)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

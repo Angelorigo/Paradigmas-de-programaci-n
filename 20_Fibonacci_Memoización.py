@@ -24,7 +24,7 @@ def fibonacci_lento(n):
     if n>2:
         return fibonacci_lento(n-1)+fibonacci_lento(n-2)
     
-for i in range (1, 36):
+for i in range (1, 10):
     print(str(i) + ":", fibonacci_lento(i))
     
     
@@ -60,7 +60,7 @@ def fibonacci(n):
     fibonaccis[n] = valor
     return valor
 
-for i in range(1, 10001):
+for i in range(1, 10):
     print(str(i) + ":", fibonacci(i))
 
 
@@ -82,7 +82,7 @@ def nfibonacci(n):
     elif n>2:
         return nfibonacci(n-1) + nfibonacci(n-2)
     
-for i in range(1, 10001):
+for i in range(1, 10):
     print(str(i) + ":", nfibonacci(i))
     
 

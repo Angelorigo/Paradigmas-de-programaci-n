@@ -32,7 +32,7 @@ puntos = np.zeros(dim*nump, dtype = np.float64)
 X = np.linspace(0.0, 2*np.pi, nump+1)
 
 #  Coordenada X
-puntos[0:nump] = np.cos(X[0:nump]) + 0.0*np.sin(2*[0:nump])
+puntos[0:nump] = np.cos(X[0:nump]) + 0.0*np.sin(2*X[0:nump])
 
 #  Coordenada Y
 puntos[nump:2*nump] = np.sin(X[0:nump]) + 0.0*np.sin(2*X[0:nump])

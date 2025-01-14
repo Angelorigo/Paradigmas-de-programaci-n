@@ -1,6 +1,4 @@
 #================================
-#  Álvarez Servín Ángel Rodrigo
-#================================
 #  Paradigmas de Programación
 #  Matemática Algorítmica
 #  ESFM IPN  Noviembre 2024

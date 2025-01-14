@@ -93,4 +93,4 @@ print(sum(x*x for x in range(5)))
 
 numeros_pares = [x for x in range(21) if x%2 == 0]
 print([x for x in range(21) if x%2 == 0])
-print(numeros pares)
+print(numeros_pares)

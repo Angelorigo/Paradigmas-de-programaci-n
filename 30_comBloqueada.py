@@ -16,7 +16,7 @@ import numpy
 #=====================================================
 
 class Mensaje:
-    def __imit__(self, rank):
+    def __init__(self, rank):
         #  ITERADOR
         self.x = range(rank*10)
         #  STRING 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
         m = comm.recv(source = fuente)
         comm.send(s, dest = destino)
     
-    print("Soy el proceso ", rank, ", el resultado es: ", len(m, x), ",", m.p)
+    print("Soy el proceso ", rank, ", el resultado es: ", len(m.x), ",", m.p)
     
     
     #==================================================================
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         data = numpy.arange(10, dtype='i')
         
         #  ENVÍO BLOQUEANTE ESPECÍFICANDO EL TIPO DE DATO
-        comm.send([data, MPI.INT], dest=1, tag=77)
+        comm.Send([data, MPI.INT], dest=1, tag=77)
         
     elif rank == 1:
         data = numpy.empty(10, dtype='i')
@@ -98,9 +98,3 @@ if __name__ == "__main__":
         data = numpy.empty(10, dtype=numpy.float64)
         comm.Recv(data, source=0, tag=13)
         print(data)
-    
-    
-    
-    
-    
-    
