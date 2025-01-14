@@ -48,7 +48,7 @@ class B:
 
 objetoA = A(1.0, 2.0, 3.0)
 objetoB = B(4.0, 5.0)
-print(objetoA.sumar_todo(objetoA.a, objetoA.b))
+print(objetoB.sumar_todo(objetoA.a, objetoA.b))
 
 
 #==============================================
