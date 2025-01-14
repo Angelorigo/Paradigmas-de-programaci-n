@@ -14,9 +14,8 @@ def saludo():
     #====================================== 
     #  Documentación rápida de la función
     #======================================
-    #"""Esta función saluda"""
-   
-   print("Quiúboles, ¿cómo estás?")
+    """Esta función saluda"""
+    print("Quiúboles, ¿cómo estás?")
 
 
 #=========================
@@ -37,7 +36,7 @@ salida = saludo()
 #  Esto no funciona
 #====================
 
-print(salida)
+#print(salida)
 
 
 #=========================
@@ -52,13 +51,11 @@ print(salida)
 #=========================
 
 def salu2(nombre):
-   
-    #"""Esta función te saluda por tu nombre"""
-
-
+    """Esta función te saluda por tu nombre"""
     print("¡Qué onda ese ", nombre, "!")
 salu2("Ángel")
 salu2("Servín")
+
 
 #===========================================
 #  Ahorrar trabajo del intérprete
@@ -66,12 +63,10 @@ salu2("Servín")
 #===========================================
 
 def saludos(nombre:str):
-    #"""Esta función te saluda por tu nombre estrictamente"""
-
-
+    """Esta función te saluda por tu nombre estrictamente"""
     print("Qué onda ese ", nombre, "!")
 saludos("Servín")
-a = 123
+a = 10
 print(type(a))
 saludos(a)
 
@@ -81,9 +76,7 @@ saludos(a)
 #=================================
 
 def saludos_multiples(nombre1, nombre2, nombre3):
-    #"""Esta función saluda a tres personas al mismo tiempo"""
-
-
+    """Esta función saluda a tres personas al mismo tiempo"""
     print("Hola ", nombre1, ",", nombre2, "y ", nombre3)
 saludos_multiples("Ángel","Fernanda","Juan")
 
@@ -93,24 +86,21 @@ saludos_multiples("Ángel","Fernanda","Juan")
 #==============================================
 
 def muchos_saludos(*nombres):
-    #"""Esta función saluda a todos los que quieras"""
-
-
+    """Esta función saluda a todos los que quieras"""
     i = 0
     #===================================
     #  end= es para ponerlo de corrido
     #===================================
 
-
     print("Hola ", end=" ")
     while len(nombres) > i:
-        #  Último nombre
-       if (i==len(nombres) - 1):
-           print(nombres[i])
-       else:
-           #  Cualquier otro nombre
-           print(nombres[i], end= " ,")
-           i+=1
+      #  Último nombre
+      if (i==len(nombres) - 1):
+        print(nombres[i])
+      else:
+        #  Cualquier otro nombre
+        print(nombres[i], end= " ,")
+      i+=1
 
 muchos_saludos("Nicole","Enrique", "Alejandro", "Iván", "Zaid", "Joel", "Servín")
 
@@ -125,17 +115,15 @@ def greet(firstname, lastname):
 greet(lastname= "Servín", firstname= "Ángel")
 
 
-#=====================================
-#  Función con argumentos escondidos
-#=====================================
+#========================================
+#  Función con argumentos escondidos **
+#========================================
 
 def greet(**person):
     #======================================================
     #  Persona tiene características firstname y lastname
     #======================================================
-
-
-    print("Hallo ", person["firstname"], " ", person["lastame"])
+    print("Hallo ", person["firstname"], " ", person["lastname"])
 
 greet(firstname= "Steve", lastname= "Jobs")
 greet(lastname= "Jobs", firstname= "Steve")
