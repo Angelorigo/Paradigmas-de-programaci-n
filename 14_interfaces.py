@@ -1,3 +1,4 @@
+#  POR CORREGIR 
 #=============================================================
 #  Del directorio aplicación, el subdirectorio repositorio, 
 #  el archivos basededatos.py : trae el objeto Basededatos
