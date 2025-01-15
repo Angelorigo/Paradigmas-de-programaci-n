@@ -107,7 +107,7 @@ print("Tardó: ", end-start, "s")
 #  Graficar la solución al tiempo real
 #======================================= 
 
-x,y = np.meshgrid(np.arrange(0, L[0], dx[0]), np.arrange(0, L[1], dx[1]))
+x,y = np.meshgrid(np.arange(0, L[0], dx[0]), np.arange(0, L[1], dx[1]))
 ax = plt.axes(projection="3d")
 up = np.reshape(u, (n[0], n[1]))
 ax.plot_surface(x, y, up, cmap = cm.hsv)

@@ -23,7 +23,7 @@ import time
 #====================================
 
 #  Número de celdas
-n = np.array([512, 512])
+n = np.array([1, 1])
 
 #  Tamaño del dominio (menor que uno)
 L = np.array([1.0, 1.0])
@@ -121,7 +121,7 @@ print("Tardó: ", end-start, "s")
 #==========================================
 
 u = np.reshape(u, (n[0], n[1]))
-x,y = np.meshgrid(np.arrange(0, L[0], dx[0]), np.arrange(0, L[1], dx[1]))
+x,y = np.meshgrid(np.arange(0, L[0], dx[0]), np.arange(0, L[1], dx[1]))
 ax = plt.axes(projection = "3d")
 ax.plot_surface(x, y, u, cmap = cm.hsv)
 plt.show()
